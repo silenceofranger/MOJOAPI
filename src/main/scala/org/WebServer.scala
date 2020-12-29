@@ -15,7 +15,7 @@ object WebServer extends App {
   private implicit val materialize: ActorMaterializer = ActorMaterializer()
 
 
-  private val routeConfig = new EmployeeRouteConfig()
+  private val routeConfig = new ClientRoute()
   val routes = {
     pathPrefix("api") {
       concat(
