@@ -4,7 +4,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
-import org.db.data.Client
+import org.databaseconfiguration.data.Client
 import org.domain.ClientRequest
 import spray.json.{DefaultJsonProtocol, JsString, JsValue, JsonFormat, RootJsonFormat}
 trait JsonUtils extends SprayJsonSupport with DefaultJsonProtocol {

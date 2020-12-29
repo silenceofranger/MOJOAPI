@@ -1,7 +1,7 @@
 package org.client.repositories
 
-import org.db.config.DbConfig
-import org.db.data.Client
+import org.databaseconfiguration.config.DbConfig
+import org.databaseconfiguration.data.Client
 import org.mongodb.scala.{Completed, MongoCollection}
 import org.mongodb.scala.bson.conversions.Bson
 import org.mongodb.scala.model.Filters.equal
@@ -45,7 +45,7 @@ object EmployeeRepo extends JsonUtils {
   private def setBsonValue(emp:Client): Bson = {
     combine(
       set("name", emp.name),
-      set("dateOfBirth",emp.dateOfBirth)
+      set("inboundFeedUrl",emp.inboundFeedUrl)
     )
   }
 }

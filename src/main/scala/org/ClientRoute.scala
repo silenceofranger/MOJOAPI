@@ -10,7 +10,7 @@ import akka.pattern.Patterns
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.Source
 import akka.util.ByteString
-import org.db.data.Client
+import org.databaseconfiguration.data.Client
 import org.domain.ClientRequest
 import org.client.actor._
 import org.utils.{JsonUtils, TimeUtils}

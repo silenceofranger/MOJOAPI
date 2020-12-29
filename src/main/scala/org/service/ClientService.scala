@@ -6,7 +6,7 @@ import akka.NotUsed
 import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.Source
-import org.db.data.Client
+import org.databaseconfiguration.data.Client
 import org.domain.ClientRequest
 import org.mongodb.scala.Completed
 import org.mongodb.scala.result.DeleteResult
